@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const results = [];
+    let result = 0;
+    while (true) {
+        result = result + 1;
+        if (checkSoNguyenTo(result)) {
+            results.push(result);
+        }
+        if (results.length === 20) {
+            break;
+        }
+    }
+
+    function checkSoNguyenTo(n) {
+        if (n < 2) {
+            return false;
+        }
+        for (let i = 2; i < (n-1); i++) {
+            if (n % i === 0) {
+                return false
+            }
+        }
+
+        return true;
+    }
+    console.log(results);
+</script>
+</body>
+</html>

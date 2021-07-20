@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết chương trình khởi tạo mảng số nguyên. -->
+<!--Hiển hiện giá trị lớn nhất trong mảng đó. -->
+<!--In ra giá trị trung bình của các phần tử trong mảng.-->
+<script>
+  let mangsonguyen = [12,3,7,6,-7,9,33,-22];
+  let max = mangsonguyen[0];
+  let tong = 0 ;
+  for (let i = 0; i <mangsonguyen.length; i ++){
+      tong = tong + mangsonguyen[i];
+    if (mangsonguyen[i] > max) {
+        max = mangsonguyen[i];
+        alert("gia tri lon nhat"+max);
+
+    }
+  }
+  alert("gia tri trung binh "+tong/mangsonguyen.length);
+</script>
+</body>
+</html>
